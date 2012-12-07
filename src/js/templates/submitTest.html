@@ -1,0 +1,23 @@
+<div class="results">
+	<div class="left">
+		Your Score:
+	
+		<div class="score">
+			{{score}}%
+		</div>
+		<div class="tryAgain">
+			<div class="startbutton">
+				Start Again
+			</div>
+		</div>
+	</div>
+	<div class="questions right">
+		{{#questions}}
+		<div class="questionResult {{#isCorrect}}correct{{/isCorrect}}{{^isCorrect}}incorrect{{/isCorrect}}">
+			Question {{questionNumber}}:
+			<div class="right">({{#isCorrect}}correct{{/isCorrect}}{{^isCorrect}}incorrect{{/isCorrect}})</div> 
+		</div>
+		{{/questions}}
+	</div>
+	<div class="clear" ></div>
+</div>

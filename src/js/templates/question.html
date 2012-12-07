@@ -1,0 +1,26 @@
+<div class="questionHeader">Question #{{questionNumber}} </div>
+<div class="questionBody">
+	<div class="questionText">
+		{{question.text}}
+	</div>
+	<div class="questionOption">
+		<input type="radio" value="true" name="question-{{questionNumber}}" />
+		true
+	</div>
+	<div class="questionOption">
+		<input type="radio" value="false" name="question-{{questionNumber}}" />
+		false
+	</div>
+	<div class="validationResults"></div>
+</div>
+<div class="navOption prev left {{#isFirst}}grayed{{/isFirst}}">
+ &lt;
+</div>
+{{#isLast}}
+<div class="navOption finish right">
+ FINISH
+</div>
+{{/isLast}}
+<div class="navOption next right {{#isLast}}grayed{{/isLast}}">
+ &gt;
+</div>
